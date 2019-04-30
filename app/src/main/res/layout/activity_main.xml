@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_gravity="center_vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/dice_image"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:contentDescription="@string/dice_image_view"
-        android:src="@drawable/empty_dice"
+        app:srcCompat="@drawable/empty_dice"
         tools:src="@drawable/dice_1"/>
 
     <Button
